@@ -2,22 +2,26 @@ package Animal;
 
 public class Gato extends Animal{
 
+    public Gato(String nome, int peso) {
+        super(nome, peso);
+    }
+
     @Override
     public void som() {
         System.out.println("miau");
     }
 
     @Override
-    public int quantidadeDeRaçao() {
-        int quantidadeDeRaçao = 0;
+    public int quantidadeDeRacao() {
+        int quantidadeDeRacao = 0;
 
         if(this.peso <= 3) {
-            quantidadeDeRaçao = this.peso * 10;
+            quantidadeDeRacao = this.peso * 10;
         }
         else{
-            quantidadeDeRaçao = this.peso * 13;
+            quantidadeDeRacao = this.peso * 13;
         }
-        return quantidadeDeRaçao;
+        return quantidadeDeRacao;
     }
 }
 
